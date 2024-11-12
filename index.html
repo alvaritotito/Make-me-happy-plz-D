@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Álvaro's Dream</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.solidbackgrounds.com/images/1920x1080/1920x1080-green-solid-color-background.jpg'); /* Usa un fondo verde sólido */
+            color: #333;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 0.5em auto;
+            color: #555;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #paypal-info {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #paypal-info img {
+            max-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Help Álvaro Achieve His Dream</h1>
+    <button onclick="showPaypalInfo()">GIVE ME 1000$</button>
+
+    <p>
+        My name is Álvaro. I’m a student in need of resources and working precarious jobs. I know some people out there have more than enough to share. 
+        Maybe you’re wealthy or just willing to help someone achieve a dream, like taking my hardworking parents on a dream vacation or getting my favorite console. 
+        Any amount, big or small, would be a huge help, and I’d be forever grateful. Thank you!
+    </p>
+
+    <div id="paypal-info">
+        <h2>Transfer Details</h2>
+        <p>To contribute, please transfer any amount you’re comfortable with. Your help means a lot!</p>
+        <img src="paypal-info.png" alt="PayPal Transfer Information">
+    </div>
+
+    <script>
+        function showPaypalInfo() {
+            document.getElementById("paypal-info").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
